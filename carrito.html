@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NekoMarket: tu supermercado de confianza con productos frescos y entrega a domicilio.">
+  <title>Carrito | NekoMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de NekoMarket">Neko<span>Market</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a aria-current="page" href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-cta" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <h1>Tu carrito</h1>
+      <div class="layout layout-cart">
+        <div>
+          <section class="card">
+            <h2>Productos</h2>
+            <ul class="cart-list">
+              <li><img class="cart-img" src="img/manzana.jpg"><div><strong>Manzana roja (lb)</strong><br><small>$1.25 c/u</small></div><label class="qty">Cant. <input type="number" min="1" max="20" value="2" aria-label="Cantidad de manzanas"></label><strong>$2.50</strong></li>
+              <li><img class="cart-img" src="img/leche.jpg"><div><strong>Leche entera 1 L</strong><br><small>$1.15 c/u</small></div><label class="qty">Cant. <input type="number" min="1" max="20" value="3" aria-label="Cantidad de leche"></label><strong>$3.45</strong></li>
+              <li><img class="cart-img" src="img/molde.jpg"><div><strong>Pan de molde</strong><br><small>$1.95 c/u</small></div><label class="qty">Cant. <input type="number" min="1" max="20" value="1" aria-label="Cantidad de pan"></label><strong>$1.95</strong></li>
+            </ul>
+            <p><a href="catalogo.html">Seguir comprando</a></p>
+          </section>
+          <section class="card">
+            <h2>Datos de envío y pago</h2>
+            <form id="checkout" action="#" method="post">
+              <fieldset>
+                <legend>Dirección de envío</legend>
+                <label for="nom">Nombre completo</label>
+                <input type="text" id="nom" name="nom" autocomplete="name" required>
+                <label for="dir">Dirección</label>
+                <input type="text" id="dir" name="dir" autocomplete="street-address" required>
+                <div class="row">
+                  <div><label for="ciudad">Ciudad</label><input type="text" id="ciudad" name="ciudad" required></div>
+                  <div><label for="tel">Teléfono</label><input type="tel" id="tel" name="tel" pattern="[0-9\s\-+]{8,15}" required></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Pago (simulado)</legend>
+                <label for="tarjeta">Número de tarjeta</label>
+                <input type="text" id="tarjeta" name="tarjeta" inputmode="numeric" pattern="[0-9]{16}" maxlength="16" placeholder="16 dígitos" title="Ingresa 16 dígitos sin espacios" required>
+                <div class="row">
+                  <div><label for="venc">Vencimiento</label><input type="month" id="venc" name="venc" required></div>
+                  <div><label for="cvv">CVV</label><input type="password" id="cvv" name="cvv" inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" required></div>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <aside class="card summary" aria-label="Resumen del pedido">
+          <h2>Resumen</h2>
+          <dl>
+            <div><dt>Subtotal</dt><dd>$7.90</dd></div>
+            <div><dt>Envío</dt><dd>$2.50</dd></div>
+            <div><dt>Descuento</dt><dd>-$0.50</dd></div>
+            <div class="total"><dt>Total</dt><dd>$9.90</dd></div>
+          </dl>
+          <button type="submit" form="checkout" class="btn full">Confirmar pedido</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section><h2>NekoMarket</h2><p>Frescura todos los días, directo a tu mesa.</p></section>
+      <section><h2>Enlaces</h2><ul><li><a href="catalogo.html">Catálogo</a></li><li><a aria-current="page" href="carrito.html">Carrito</a></li><li><a href="contacto.html">Contacto</a></li></ul></section>
+      <section><h2>Horario</h2><p>Lunes a sábado: 7:00 a 21:00<br>Domingo: 8:00 a 18:00</p></section>
+    </div>
+    <p class="copy">&copy; 2026 NekoMarket.</p>
+  </footer>
+</body>
+</html>

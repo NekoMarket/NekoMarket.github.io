@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NekoMarket: tu supermercado de confianza con productos frescos y entrega a domicilio.">
+  <title>Contacto | NekoMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de NekoMarket">Neko<span>Market</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a aria-current="page" href="contacto.html">Contacto</a></li>
+        <li><a class="nav-cta" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <h1>Contáctanos</h1>
+      <div class="two-col">
+        <article class="card">
+          <h2>Escríbenos</h2>
+          <form action="#" method="post">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9\s\-+]{8,15}" placeholder="7000-0000" title="Solo números, entre 8 y 15 dígitos">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Consulta sobre un pedido</option>
+              <option>Sugerencia</option>
+              <option>Reclamo</option>
+              <option>Trabaja con nosotros</option>
+            </select>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" minlength="10" required></textarea>
+            <label class="check"><input type="checkbox" required> Acepto que me contacten por mi consulta</label>
+            <button type="submit" class="btn full">Enviar mensaje</button>
+          </form>
+        </article>
+        <aside class="card">
+          <h2>Datos de contacto</h2>
+          <ul class="info">
+            <li> Av. Roosevelt 123, San Salvador</li>
+            <li> +503 2222-0000</li>
+            <li> Nekomarket@gamil.com</li>
+            <li> Lun-Sáb 7:00-21:00, Dom 8:00-18:00</li>
+          </ul>
+        </aside>
+      </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section><h2>NekoMarket</h2><p>Frescura todos los días, directo a tu mesa.</p></section>
+      <section><h2>Enlaces</h2><ul><li><a href="catalogo.html">Catálogo</a></li><li><a href="carrito.html">Carrito</a></li><li><a aria-current="page" href="contacto.html">Contacto</a></li></ul></section>
+      <section><h2>Horario</h2><p>Lunes a sábado: 7:00 a 21:00<br>Domingo: 8:00 a 18:00</p></section>
+    </div>
+    <p class="copy">&copy; 2026 NekoMarket.</p>
+  </footer>
+</body>
+</html>

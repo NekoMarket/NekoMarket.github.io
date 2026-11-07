@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NekoMarket: tu supermercado de confianza con productos frescos y entrega a domicilio.">
+  <title>Iniciar sesión | NekoMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de NekoMarket">Neko<span>Market</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-cta" aria-current="page" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section narrow">
+      <article class="card">
+        <h1>Iniciar sesión</h1>
+        <p>Accede para ver tus pedidos y comprar más rápido.</p>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="nombre@correo.com" autocomplete="email" required>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" minlength="8" maxlength="30" autocomplete="current-password" required>
+          <label class="check"><input type="checkbox" name="recordar"> Mantener sesión iniciada</label>
+          <button type="submit" class="btn full">Entrar</button>
+        </form>
+        <p class="center small"><a href="#">¿Olvidaste tu contraseña?</a></p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section><h2>NekoMarket</h2><p>Frescura todos los días, directo a tu mesa.</p></section>
+      <section><h2>Enlaces</h2><ul><li><a href="catalogo.html">Catálogo</a></li><li><a href="carrito.html">Carrito</a></li><li><a href="contacto.html">Contacto</a></li></ul></section>
+      <section><h2>Horario</h2><p>Lunes a sábado: 7:00 a 21:00<br>Domingo: 8:00 a 18:00</p></section>
+    </div>
+    <p class="copy">&copy; 2026 NekoMarket.</p>
+  </footer>
+</body>
+</html>
